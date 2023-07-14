@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tai Nghe, Loa, Micro</title>
+    <link rel="stylesheet" href="./csst/Style.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <!-- <link rel="stylesheet" href="./TestgioHang/style.css"> -->
+</head>
+<body>
+    
+    
+    <div class="header">
+        <div class="grid wide">
+            <div class="header__wrap">
+                <div class="header__login">
+                            <div class="header__login-register">
+                                <div class="header__login-register-wrap">
+                                    <i class="fa-solid fa-circle-user header__login-register--margin"></i>
+                                    
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+
+                            </div>
+                        <div class="header__login-register" >
+                            <a href="DangKy_DangNhap.html" class="TEXT">ĐĂNG KÝ/ĐĂNG NHẬP</a> 
+                        </div>
+                    
+                    
+                    </div>
+                    <div class="header__logo">
+                                <img src="/BaoCaoJAVASCRIPt/hinhanh/bia.jpg" alt="" class="header__logo-link-logo">
+                            </a>
+                    </div>
+                           
+                
+                <div class="header__wrap-search-cart">
+                    <form class="header__wrap-search" action="">
+                        <input type="search" class="header__wrap-search-input" placeholder="Tìm kiếm..." name="timkiem">
+                        <div class="header__wrap-search-cart-wrap">
+                            <input type="submit" class="header__wrap-search-btn" value="" name="submit">
+                            <i class="header__wrap-search-btn-icon fa-solid fa-magnifying-glass"></i>
+                
+                        </div>
+                    </form>   
+                    <div class="header__search-cart">
+                        <a href="" class="header__search-cart-link">
+                            <i class="header__search-cart-icon fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul class="menu__list">
+            <li class="menu__item ">
+                <a href="index.html" class="menu__item-link">TRANG CHỦ</a>
+            </li>
+            <li class="menu__item">
+                <a href="webchuot.html" class="menu__item-link">CHUỘT</a>
+            </li>
+            <li class="menu__item">
+                <a href="lkmt.html" class="menu__item-link"> LINH KIỆN MÁY TÍNH</a>
+            </li>
+            <li class="menu__item">
+                <a href="webmanhinh.html" class="menu__item-link">MÀN HÌNH MÁY TÍNH</a>
+            </li>
+            <li class="menu__item">
+                <a href="webbanphim.html" class="menu__item-link">BÀN PHÍM</a>
+            </li>
+            <li class="menu__item">
+                <a href="TaiNgheLoaMicro.html" class="menu__item-link">TAI NGHE, LOA, MICRO</a>
+            </li>
+          <li class="menu__item">
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                GIỎ HÀNG
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+        
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+          </li>
+                
+            
+        </ul>
+    </div>
+
+    <br>
+    <hr width="100%" size="2" color="black">
+    <br>
+    <hr width="100%" size="5" color="black">
+    <br>
+    <h1 style="text-align: center;">SẢN PHẨM HOT</h1>
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/airpods 2.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tai nghe airpods 2</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1500000<sup><u>đ</u></sup> </span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vỏ Hàng</button>
+                        </div>
+                    </div>
+             
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/airpods 3.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tai nghe airpods 3</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">2000000 <sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vỏ Hàng</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/airpods pro.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tai nghe airpods pro</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">550000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/tainghe (2).jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tai Nghe PhiLips</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">250000 <sup><u>đ</u></sup> </span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/tainghe.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tai nghe đen cá tính
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">350000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/tainghebluetoothg11gaming.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tai nghe Bluetooth G11 Gaming </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">500000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/taingheday.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tai nghe dây</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">189000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/tainghemeo.png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tai Nghe Gaming Mèo Hồng dễ thương</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">220000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/loa.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Loa harman/kardon</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">10000000<sup><u>đ</u></sup> </span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vỏ Hàng</button>
+                        </div>
+                    </div>
+             
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/loa1.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Loa JBL</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">20000000 <sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vỏ Hàng</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/loa2.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Loa Marshall</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">15500000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/loa3.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Loa SONY</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">13500000 <sup><u>đ</u></sup> </span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/Mic-karaoke-Excelvan-K48.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Mic-karaoke-Excelvan-K48
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1350000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/microMiracleM100.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">micro MiracleM100 </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1500000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/Thumbnail-Micro-Shure-SM58-LC.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">TMicro-Shure-SM58-LC</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1189000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/Mic-karaoke-Sertong-K58.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Mic-karaoke-Sertong-K58</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1950000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+<br>
+    <hr width="100%" size="2" color="black">
+    <br>
+    <hr width="100%" size="5" color="black">
+    <br>
+    <h1 style="text-align: center;">SẢN PHẨM BÁN CHẠY</h1>
+    <div class="body2">
+        <table cellpadding="10" cellspacing="10" width="100%">
+            <tr>
+                <td> <div class="container__product-item">
+                    <a href="" class="container__product-item-link">
+                    <div class="container__product-item-wrap-img">
+                        <img src="./hinhanh/airpods 3.jpg" alt="" class="container__product-item-img">
+                    </div>
+                    <p class="container__product-item-name">
+                        Tai Nghe AirPods3
+                    </p>
+                    <p class="container__product-item-price">
+                        2000000 đ
+                    </p>
+                    <div class="container__product-item-wrap-icon-btn">
+                        <form class="container__product-item-wrap-btn" action="">
+                            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+                        </form>
+                    </div>
+    
+                    
+            </a>
+        </div></td>
+        <td> <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="./hinhanh/tainghegaming2.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                Tai Nghe Gaming 2
+            </p>
+            <p class="container__product-item-price">
+               350000đ
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+                </form>
+            </div>
+    
+            
+    </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="./hinhanh/Tainghemeoden.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Tai Nghe Gaming Mèo Đen
+        </p>
+        <p class="container__product-item-price">
+           225000 đ
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="./hinhanh/tainghedaydethuong.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Tai Nghe Dây Dễ Thương
+        </p>
+        <p class="container__product-item-price">
+           120000 đ
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+            <td>
+                <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="./hinhanh/loamini.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Loa Bluetooth Mini siêu cute
+                </p>
+                <p class="container__product-item-price">
+                   220000 đ
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+                    </form>
+                </div>
+    
+                
+        </a></div></td>
+            </tr>
+            <tr>
+                <td> <div class="container__product-item">
+                    <a href="" class="container__product-item-link">
+                    <div class="container__product-item-wrap-img">
+                        <img src="./hinhanh/Tainghetho.jpg" alt="" class="container__product-item-img">
+                    </div>
+                    <p class="container__product-item-name">
+                        Tai Nghe Gaming Thỏ Xinh Xắn
+                    </p>
+                    <p class="container__product-item-price">
+                       320000 đ
+                    </p>
+                    <div class="container__product-item-wrap-icon-btn">
+                        <form class="container__product-item-wrap-btn" action="">
+                            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+                        </form>
+                    </div>
+    
+                    
+            </a>
+        </div></td>
+        <td> <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="./hinhanh/LoaKTVCardioid.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                Loa KTV Cardioid
+            </p>
+            <p class="container__product-item-price">
+               320000 đ
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+                </form>
+            </div>
+    
+            
+    </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="./hinhanh/airpods pro.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Tai Nghe AirPods Pro
+        </p>
+        <p class="container__product-item-price">
+           550000 đ
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="./hinhanh/taingheday.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Tai Nghe Dây
+        </p>
+        <p class="container__product-item-price">
+           189000 đ
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+            <td>
+                <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="./hinhanh/tainghegaming.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Tai Nghe Gaming
+                </p>
+                <p class="container__product-item-price">
+                   120000 đ
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+                    </form>
+                </div>
+    
+                
+        </a></div></td>
+            </tr>
+        </table>
+</div>
+    
+</body>
+<div class="footer">
+    <div class="grid wide">
+        <div class="row footer__list">
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                        GIỚI THIỆU
+                    </p>
+                    <p class="footer__introduce-item-text">
+                    Chào mừng bạn đến với cửa hàng DQTT shop linh kiện điện tử ! Tại đây, mỗi một dòng chữ, 
+                        mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử đạt đến 100 năm tới , 
+                        và sẽ không ngừng phát triển lớn mạnh.
+                    </p>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       ĐỊA CHỈ
+                    </p>
+                   <div class="footer__introduce-list">
+                       <div class="footer__introduce-item">
+                            <i class="footer__introduce-item-icon fa-solid fa-location-dot"></i>
+                            <p class="footer__introduce-item-text">
+                            KTX2, Trường cao đẳng cần thơ, Phường Hưng Lợi, Quận Ninh Kiều, Thành Phố Cần Thơ
+                            </p>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="tel:0123456789" class="footer__introduce-item-link">
+                               <i class="footer__introduce-item-icon fa-solid fa-mobile-screen-button"></i>
+                               <p class="footer__introduce-item-text">
+                                  0332512854
+                               </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="mailto:tquocduy0304@gmail.com" class="footer__introduce-item-link">
+                                <i class="footer__introduce-item-icon fa-solid fa-at"></i>
+                                <p class="footer__introduce-item-text">
+                                   tquocduy0304@gmail.com
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="https://www.tiktok.com/@quocduy990?lang=vi-VN" class="footer__introduce-item-link">
+                                <i class="footer__introduce-item-icon fa-brands fa-tiktok"></i>
+                                <p class="footer__introduce-item-text">
+                                   @quocduy990
+                                </p>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       MENU
+                    </p>
+                   <div class="footer__introduce-list">
+                       <div class="footer__introduce-item">
+                           <a href="index.php" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Trang Chủ
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Liên hệ
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Tin Tức
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Giới Thiệu
+                                </p>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       MẠNG XÃ HỘI
+                    </p>
+                   <div class="footer__introduce-list footer__introduce-list--display ">
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.facebook.com/duy.tranquoc.509" class="footer__introduce-item-link footer__introduce-item-link--display ">
+                                <i class="footer__introduce-item-icon fa-brands fa-facebook-f"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.instagram.com/" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-instagram"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://twitter.com/?lang=vi" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-twitter"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.pinterest.com/" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-pinterest-p"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="#" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-solid fa-rss"></i>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer__info">
+            <div class="col l-4">
+                <div class="footer__end">
+                    <p class="footer__end-text">
+                        ĐĂNG KÝ NHẬN THÔNG TIN
+                    </p>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="footer__end-wrap">
+                   <input type="email" class="footer__end-email" placeholder="Email...">
+                   <input type="button" class="footer__end-btn" value="ĐĂNG KÝ">
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="footer__end-imgs">
+                   <img src="hinhanh/footer1.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer2.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer3.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer4.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer5.png" alt="" class="footer__end-img">
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="./JavaScript/style.js"></script>
+
+</html>
+<script>
+    // // // Chuyển ảnh
+
+        var btnleft=document.querySelector(".container__btn-left");
+        var btnright=document.querySelector(".container__btn-right");
+        var number=document.querySelectorAll(".slide");
+        var index=0;
+        btnright.addEventListener('click',function(){
+            index++;
+            if(index>=number.length)
+            index=0;
+            document.querySelector(".container__slide").style.right=index*100+'%';
+        })
+        btnleft.addEventListener('click',function(){
+            index--;
+            if(index<0)
+            index=number.length-1;
+            document.querySelector(".container__slide").style.right=index*100+'%';
+        })
+        setInterval(
+            function(){
+                index++;
+                if(index>=number.length)
+                index=0;
+                document.querySelector(".container__slide").style.right=index*100+'%';
+            },2000
+        )
+    </script>

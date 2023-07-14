@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linh Kiện Máy Tính</title>
+    <link rel="stylesheet" href="./css/StyleWT.css">
+    <link rel="stylesheet" href="./css/grid.css">
+  
+    
+</head>
+<body>
+    <div class="header">
+        <div class="grid wide">
+            <div class="header__wrap">
+                <div class="header__login">                    
+    
+                    </div>
+                    <div class="header__logo">
+                                <img src="/BaoCaoJAVASCRIPt/hinhanh/bia.jpg" alt="" class="header__logo-link-logo">
+                            </a>
+                    </div>
+                           
+                
+                <div class="header__wrap-search-cart">
+                    <form class="header__wrap-search" action="">
+                        <input type="search" class="header__wrap-search-input" placeholder="Tìm kiếm..." name="timkiem">
+                        <div class="header__wrap-search-cart-wrap">
+                            <input type="submit" class="header__wrap-search-btn" value="" name="submit">
+                            <i class="header__wrap-search-btn-icon fa-solid fa-magnifying-glass"></i>
+                
+                        </div>
+                    </form>   
+                    <div class="header__search-cart">
+                        <a href="" class="header__search-cart-link">
+                            <i class="header__search-cart-icon fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul class="menu__list">
+            <li class="menu__item ">
+                <a href="index.html" class="menu__item-link">TRANG CHỦ</a>
+            </li>
+            <li class="menu__item">
+                <a href="webchuot.html" class="menu__item-link">CHUỘT</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__item-link"> LINH KIỆN MÁY TÍNH</a>
+            </li>
+            <li class="menu__item">
+                <a href="webmanhinh.html" class="menu__item-link">MÀN HÌNH MÁY TÍNH</a>
+            </li>
+            <li class="menu__item">
+                <a href="webbanphim.html" class="menu__item-link">BÀN PHÍM</a>
+            </li>
+            <li class="menu__item">
+                <a href="TaiNgheLoaMicro.html" class="menu__item-link">TAI NGHE, LOA, MICRO</a>
+            </li>
+            <li class="menu__item">
+                <button id="cart">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    GIỎ HÀNG
+                </button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+            
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+            
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+              </li>
+        </ul>
+    </div>
+   <div >
+        <img src ="hinhanh/anhbia3.jpg"class ="anhbia" >
+   </div>
+
+   <br>
+    <hr width="100%" size="2" color="black">
+    <br>
+    <hr width="100%" size="5" color="black">
+    <br>
+    <h1 style="text-align: center;">SẢN PHẨM NỔI BẬT</h1>
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk1.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Raspberry Pi 4 Model B 2019 Bản 8G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">6500000<sup><u>đ</u></sup> </span>
+                            </div>
+                            
+                            <button type="button" class="btn btn-cart">Thêm Vỏ Hàng</button>
+                        </div>
+                    </div>
+             
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk2.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Bộ KIT Học Tập Arduino Uno R3 BLK</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">100000<sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vỏ Hàng</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk3.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Arduino Nano 3.0 LGT8F328P (Kèm Cáp USB)</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">550000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk4.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">KIT Arduino UNO R3 CH340G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">350000 <sup><u>đ</u></sup> </span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk5.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">KIT Arduino Mega2560 ATMEGA16U2
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">450000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk6.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">KIT STM32F429 DISCOVERY </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">300000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk7.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Mạch Nạp JLINK V9.0</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">289000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk8.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Mạch Nạp ST-Link Mini</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">120000 <sup><u>đ</u></sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+<br>
+    <hr width="100%" size="2" color="black">
+    <br>
+    <hr width="100%" size="5" color="black">
+    <br>
+    <h1 style="text-align: center;">TẤT CẢ SẢN PHẨM</h1>
+
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk9.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Card đồ hoạ Asus ROG-STRIX-RTX3050-O8G-GAMING - 8GB GDDR6 - 128 bit</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">7900000<sup><u>đ</u></sup> </span>
+                                
+                            </div>
+                         
+                            
+                            <button type="button" class="btn btn-cart">Thêm Vỏ Hàng</button>
+                        </div>
+                    </div>
+             
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk10.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Card đồ họa Asus TUF RTX 3060Ti O8G V2 GAMING</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">10000000 <sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vỏ Hàng</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk11.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Card đồ hoạ Asus TUF Gaming GeForce RTX 3090 Ti 24GB GDDR6X </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">33999000 <sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk12.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Card đồ hoạ Asus TUF-GTX1650-4GD6-GAMING - 4GB GDDR6 - 128 bit</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">4199000 <sup><u>đ</u></sup> </span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk13.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CPU Intel Core i5 10400 (LGA 1200/6 Core-12 Thread/2.9 GHz-4.3 GHz/12 MB/65 W)
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">4990000<sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk14.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CPU Intel Core i5-11400 + Quạt</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">4900000 <sup><u>đ</u></sup></span>
+                               
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/LK15.JPG"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CPU Intel Core i3-10100F + Quạt
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1990000 <sup><u>đ</u></sup></span>
+                               
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk16.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CPU Intel Core i5-10400F + Quạt
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">2799000 <sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk17.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Ổ cứng WD SSD 240GB Sata3 Green
+                         </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">599000<sup><u>đ</u></sup> </span>
+                                
+                            </div>
+                         
+                            
+                            <button type="button" class="btn btn-cart">Thêm Vỏ Hàng</button>
+                        </div>
+                    </div>
+             
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk18.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Ổ Cứng SSD Lexar 256 GB M2 NVME - Đọc: 3000 MB/s - Ghi: 1300 MB/s</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">8300000 <sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vỏ Hàng</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk19.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Ổ Cứng Lexar M2.2280 NVME 1TB_ LNM610-1TRB </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1399000 <sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk20.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">RAM Desktop V-Color Skywalker Plus 8 GB - DDR4 - 3200 MHz - Purple</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">699000 <sup><u>đ</u></sup> </span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk21.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">RAM ADATA XPG Spectrix D41 RGB 8 GB-DDR4-3200 MHz
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">4990000<sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk22.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">RAM Desktop V-Color Prism Pro RGB 8 GB - DDR4 - 3200 MHz - White</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">690000 <sup><u>đ</u></sup></span>
+                               
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk23.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Card đồ họa MSI GeForce GTX 1650 VENTUS XS 4G OC
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1990000 <sup><u>đ</u></sup></span>
+                               
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./hinhanh/lk24.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CPU Desktop AMD Ryzen 5 5600X
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">8799000 <sup><u>đ</u></sup></span>
+                                
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+<div class="footer">
+    <div class="grid wide">
+        <div class="row footer__list">
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                        GIỚI THIỆU
+                    </p>
+                    <p class="footer__introduce-item-text">
+                    Chào mừng bạn đến với cửa hàng DQTT shop linh kiện điện tử ! Tại đây, mỗi một dòng chữ, 
+                        mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử đạt đến 100 năm tới , 
+                        và sẽ không ngừng phát triển lớn mạnh.
+                    </p>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       ĐỊA CHỈ
+                    </p>
+                   <div class="footer__introduce-list">
+                       <div class="footer__introduce-item">
+                            <i class="footer__introduce-item-icon fa-solid fa-location-dot"></i>
+                            <p class="footer__introduce-item-text">
+                            KTX2, Trường cao đẳng cần thơ, Phường Hưng Lợi, Quận Ninh Kiều, Thành Phố Cần Thơ
+                            </p>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="tel:0123456789" class="footer__introduce-item-link">
+                               <i class="footer__introduce-item-icon fa-solid fa-mobile-screen-button"></i>
+                               <p class="footer__introduce-item-text">
+                                  0332512854
+                               </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="mailto:tquocduy0304@gmail.com" class="footer__introduce-item-link">
+                                <i class="footer__introduce-item-icon fa-solid fa-at"></i>
+                                <p class="footer__introduce-item-text">
+                                   tquocduy0304@gmail.com
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="https://www.tiktok.com/@quocduy990?lang=vi-VN" class="footer__introduce-item-link">
+                                <i class="footer__introduce-item-icon fa-brands fa-tiktok"></i>
+                                <p class="footer__introduce-item-text">
+                                   @quocduy990
+                                </p>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       MENU
+                    </p>
+                   <div class="footer__introduce-list">
+                       <div class="footer__introduce-item">
+                           <a href="index.php" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Trang Chủ
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Liên hệ
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Tin Tức
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Giới Thiệu
+                                </p>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       MẠNG XÃ HỘI
+                    </p>
+                   <div class="footer__introduce-list footer__introduce-list--display ">
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.facebook.com/duy.tranquoc.509" class="footer__introduce-item-link footer__introduce-item-link--display ">
+                                <i class="footer__introduce-item-icon fa-brands fa-facebook-f"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.instagram.com/" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-instagram"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://twitter.com/?lang=vi" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-twitter"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.pinterest.com/" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-pinterest-p"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="#" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-solid fa-rss"></i>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer__info">
+            <div class="col l-4">
+                <div class="footer__end">
+                    <p class="footer__end-text">
+                        ĐĂNG KÝ NHẬN THÔNG TIN
+                    </p>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="footer__end-wrap">
+                   <input type="email" class="footer__end-email" placeholder="Email...">
+                   <input type="button" class="footer__end-btn" value="ĐĂNG KÝ">
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="footer__end-imgs">
+                   <img src="hinhanh/footer1.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer2.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer3.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer4.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer5.png" alt="" class="footer__end-img">
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="./JavaScript/styleWT.js"></script>
+</html>
+<script>
+    // // // Chuyển ảnh
+
+        var btnleft=document.querySelector(".container__btn-left");
+        var btnright=document.querySelector(".container__btn-right");
+        var number=document.querySelectorAll(".slide");
+        var index=0;
+        btnright.addEventListener('click',function(){
+            index++;
+            if(index>=number.length)
+            index=0;
+            document.querySelector(".container__slide").style.right=index*100+'%';
+        })
+        btnleft.addEventListener('click',function(){
+            index--;
+            if(index<0)
+            index=number.length-1;
+            document.querySelector(".container__slide").style.right=index*100+'%';
+        })
+        setInterval(
+            function(){
+                index++;
+                if(index>=number.length)
+                index=0;
+                document.querySelector(".container__slide").style.right=index*100+'%';
+            },2000
+        )
+    </script>
+     

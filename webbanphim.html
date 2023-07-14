@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn Phím</title>
+    <link rel="stylesheet" href="./csst/Style.css">
+    <link rel="stylesheet" href="./csst/grid.css">
+    <script src="./JavaScript/style.js"></script>
+    <script src="./JavaScript/script.js"></script>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="grid wide">
+            <div class="header__wrap">
+                <div class="header__login">
+                            <div class="header__login-register">
+                                <div class="header__login-register-wrap">
+                                    <i class="fa-solid fa-circle-user header__login-register--margin"></i>
+                                
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+
+                            </div>
+                        <div class="header__login-register" >
+                            <a href="DangKy_DangNhap.html" class="TEXT">ĐĂNG KÝ/ĐĂNG NHẬP</a> </div>
+                    
+                    
+                    </div>
+                    <div class="header__logo">
+                                <img src="/BaoCaoJAVASCRIPt/hinhanh/bia.jpg" alt="" class="header__logo-link-logo">
+                            </a>
+                    </div>
+                           
+                
+                <div class="header__wrap-search-cart">
+                    <form class="header__wrap-search" action="">
+                        <input type="search" class="header__wrap-search-input" placeholder="Tìm kiếm..." name="timkiem">
+                        <div class="header__wrap-search-cart-wrap">
+                            <input type="submit" class="header__wrap-search-btn" value="" name="submit">
+                            <i class="header__wrap-search-btn-icon fa-solid fa-magnifying-glass"></i>
+                
+                        </div>
+                    </form>   
+                    <div class="header__search-cart">
+                        <a href="" class="header__search-cart-link">
+                            <i class="header__search-cart-icon fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul class="menu__list">
+            <li class="menu__item ">
+                <a href="index.html" class="menu__item-link">TRANG CHỦ</a>
+            </li>
+            <li class="menu__item">
+                <a href="webchuot.html" class="menu__item-link">CHUỘT</a>
+            </li>
+            <li class="menu__item">
+                <a href="lkmt.html" class="menu__item-link"> LINH KIỆN MÁY TÍNH</a>
+            </li>
+            <li class="menu__item">
+                <a href="webmanhinh.html" class="menu__item-link">MÀN HÌNH MÁY TÍNH</a>
+            </li>
+            <li class="menu__item">
+                <a href="webbanphim.html" class="menu__item-link">BÀN PHÍM</a>
+            </li>
+            <li class="menu__item">
+                <a href="TaiNgheLoaMicro.html" class="menu__item-link">TAI NGHE, LOA, MICRO</a>
+            </li>
+            <li class="menu__item">
+                <a href="" class="menu__item-link">TAI NGHE, LOA, MICRO</a>
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <hr width="100%" size="2" color="black">
+    <br>
+    <div id="MyClockDisplay" class="clock" onload="showTime()" align="left"></div>
+    <script>
+     function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+        
+        if(h == 0){
+            h = 12;
+        }
+        
+        if(h > 12){
+            h = h - 12;
+            session = "PM";
+        }
+        
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+        
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+        
+        setTimeout(showTime, 1000);
+        
+      }
+      
+      showTime();
+      </script>    
+    <br><div align="center"><a href="#"><img src="SP/h4.jpg"  height="70%" width="70%" ></a></div> 
+    <hr width="100%" size="5" color="black">
+    <br>
+    <h1><p id=cc1>SẢN PHẨM NỔI BẬT</p></h1>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#cc1").click(function(){
+            $("#cc1").hide();
+            }
+        );
+    });
+    </script>
+<div class="body2">
+    <table cellpadding="10" cellspacing="10" width="100%">
+        <tr>
+            <td> <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="SP/bp1.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Bàn phím cơ E-Dra EK314W
+                </p>
+                <p class="container__product-item-price">
+                   520.000 <sup><u>đ</u></sup>
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                    </form>
+                </div>
+
+                
+        </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/bp2.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Bàn phím cơ AKKO 5108B Plus Demon Slayer
+        </p>
+        <p class="container__product-item-price">
+            2.890.000 <sup><u>đ</u></sup>
+        <p class="container__product-item-price-old">
+            2.990.000 <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+            </form>
+        </div>
+
+        
+</a>
+</div></td>
+<td> <div class="container__product-item">
+    <a href="" class="container__product-item-link">
+    <div class="container__product-item-wrap-img">
+        <img src="SP/bp3.jpg" alt="" class="container__product-item-img">
+    </div>
+    <p class="container__product-item-name">
+        Bàn phím Razer DeathStalker V2 Pro White
+    </p>
+    <p class="container__product-item-price">
+        4.890.000 <sup><u>đ</u></sup>
+    <p class="container__product-item-price-old">
+        5.990.000  <sup><u>đ</u></sup>
+    </p>
+    <div class="container__product-item-wrap-icon-btn">
+        <form class="container__product-item-wrap-btn" action="">
+            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+        </form>
+    </div>
+
+    
+</a>
+</div></td> 
+<td> <div class="container__product-item">
+    <a href="" class="container__product-item-link">
+    <div class="container__product-item-wrap-img">
+        <img src="SP/bp4.jpg" alt="" class="container__product-item-img">
+    </div>
+    <p class="container__product-item-name">
+        Bàn phím cơ AKKO MOD007 PC Orange on Black
+    </p>
+    <p class="container__product-item-price">
+        2.390.000 <sup><u>đ</u></sup>
+        <p class="container__product-item-price-old">
+            2.590.000  <sup><u>đ</u></sup>
+    </p>
+    <div class="container__product-item-wrap-icon-btn">
+        <form class="container__product-item-wrap-btn" action="">
+            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+        </form>
+    </div>
+
+    
+</a>
+</div></td> 
+        <td>
+            <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/bp5.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                Bàn phím cơ AKKO MonsGeek MG108 Doll of Princess
+            </p>
+            <p class="container__product-item-price">
+                1.350.000  <sup><u>đ</u></sup>
+                <p class="container__product-item-price-old">
+                    1.450.000   <sup><u>đ</u></sup>
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                </form>
+            </div>
+
+            
+    </a></div></td>
+        </tr>
+        <tr>
+            <td> <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="SP/bp6.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Bàn phím cơ Razer Ornata V3 TKL
+                </p>
+                <p class="container__product-item-price">
+                    1.790.000  <sup><u>đ</u></sup>
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                    </form>
+                </div>
+
+                
+        </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/bp7.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Bàn phím cơ ASUS TUF Gaming K7
+        </p>
+        <p class="container__product-item-price">
+            1.789.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+            </form>
+        </div>
+
+        
+</a>
+</div></td>
+<td> <div class="container__product-item">
+    <a href="" class="container__product-item-link">
+    <div class="container__product-item-wrap-img">
+        <img src="SP/bp8.jpg" alt="" class="container__product-item-img">
+    </div>
+    <p class="container__product-item-name">
+        Bàn Phím cơ ASUS ROG Azoth
+    </p>
+    <p class="container__product-item-price">
+       6.990.000 <sup><u>đ</u></sup>
+    </p>
+    <div class="container__product-item-wrap-icon-btn">
+        <form class="container__product-item-wrap-btn" action="">
+            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+        </form>
+    </div>
+
+    
+</a>
+</div></td> 
+<td> <div class="container__product-item">
+    <a href="" class="container__product-item-link">
+    <div class="container__product-item-wrap-img">
+        <img src="SP/bp9.jpg" alt="" class="container__product-item-img">
+    </div>
+    <p class="container__product-item-name">
+        Bàn phím Gaming Rapoo V530 RGB
+    </p>
+    <p class="container__product-item-price">
+        790.000 ₫ <sup><u>đ</u></sup>
+    </p>
+    <div class="container__product-item-wrap-icon-btn">
+        <form class="container__product-item-wrap-btn" action="">
+            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+        </form>
+    </div>
+
+    
+</a>
+</div></td> 
+        <td>
+            <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/bp10.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                
+                Bàn phím cơ Keychron K10 Pro Hot Swap Led RGB
+            </p>
+            <p class="container__product-item-price">
+                2.590.000  <sup><u>đ</u></sup>
+                <p class="container__product-item-price-old ">
+                    2.790.000   <sup><u>đ</u></sup>
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                </form>
+            </div>
+
+            
+    </a></div></td>
+        </tr>
+    </table>
+    
+</div>
+<br>
+
+    <div class="body2">
+        <table cellpadding="10" cellspacing="10" width="100%">
+            <tr>
+                <td> <div class="container__product-item">
+                    <a href="" class="container__product-item-link">
+                    <div class="container__product-item-wrap-img">
+                        <img src="SP/bp11.jpg" alt="" class="container__product-item-img">
+                    </div>
+                    <p class="container__product-item-name">
+                        Bàn phím cơ AKKO 5075B Plus Black & Cyan
+                    </p>
+                    <p class="container__product-item-price">
+                        2.190.000 <sup><u>đ</u></sup>
+                        <p class="container__product-item-price-old">
+                            2.390.000  <sup><u>đ</u></sup>
+    
+                    </p>
+                    <div class="container__product-item-wrap-icon-btn">
+                        <form class="container__product-item-wrap-btn" action="">
+                            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                        </form>
+                    </div>
+    
+                    
+            </a>
+        </div></td>
+        <td> <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/bp12.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                Bàn phím cơ E-DRA E-DRA EK398
+            </p>
+            <p class="container__product-item-price">
+                499.000 <sup><u>đ</u></sup>
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                </form>
+            </div>
+    
+            
+    </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/bp13.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Bàn phím Razer DeathStalker V2 Pro TKL
+        </p>
+        <p class="container__product-item-price">
+            4.350.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/bp14.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+           Bàn phím cơ Razer BlackWidow V4 Pro
+ 
+        </p>
+        <p class="container__product-item-price">
+            5.490.000 <sup><u>đ</u></sup>
+            <p class="container__product-item-price-old">
+                5.990.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+            <td>
+                <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="SP/bp15.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Bàn phím cơ AKKO 5075B Plus Dragon Ball Super
+                </p>
+                <p class="container__product-item-price">
+                    2.980.000 <sup><u>đ</u></sup>
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                    </form>
+                </div>
+    
+                
+        </a></div></td>
+            </tr>
+            <tr>
+                <td> <div class="container__product-item">
+                    <a href="" class="container__product-item-link">
+                    <div class="container__product-item-wrap-img">
+                        <img src="SP/bp16.jpg" alt="" class="container__product-item-img">
+                    </div>
+                    <p class="container__product-item-name">
+                        Bàn phím cơ AKKO 3068B Plus World Tour Tokyo
+                    </p>
+                    <p class="container__product-item-price">
+                        2.089.000  <sup><u>đ</u></sup>
+                    </p>
+                    <div class="container__product-item-wrap-icon-btn">
+                        <form class="container__product-item-wrap-btn" action="">
+                            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                        </form>
+                    </div>
+    
+                    
+            </a>
+        </div></td>
+        <td> <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/bp17.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                Bàn phím cơ AKKO 3087 v2 DS Horizon
+            </p>
+            <p class="container__product-item-price">
+                1.190.000  <sup><u>đ</u></sup>
+                <p class="container__product-item-price-old">
+                    1.399.000   <sup><u>đ</u></sup>
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                </form>
+            </div>
+    
+            
+    </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/bp18.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Bàn phím quang cơ Dareu EK1280X Black Grey
+        </p>
+        <p class="container__product-item-price">
+            790.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/bp19.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Bàn phím cơ AKKO 3108 v2 DS Horizon
+        </p>
+        <p class="container__product-item-price">
+            1.290.000  <sup><u>đ</u></sup>
+            <p class="container__product-item-price-old">
+                1.599.000   <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+            <td>
+                <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="SP/bp20.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Bàn phím cơ AKKO 5075B Plus Naruto
+                </p>
+                <p class="container__product-item-price">
+                    2.890.000 <sup><u>đ</u></sup>
+                    <p class="container__product-item-price-old">
+                        2.990.000    <sup><u>đ</u></sup>
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                    </form>
+                </div>
+    
+                
+        </a></div></td>
+            </tr>
+        </table>
+</div>
+<br>
+
+    <div class="body2">
+        <table cellpadding="10" cellspacing="10" width="100%">
+            <tr>
+                <td> <div class="container__product-item">
+                    <a href="" class="container__product-item-link">
+                    <div class="container__product-item-wrap-img">
+                        <img src="SP/bp21.jpg" alt="" class="container__product-item-img">
+                    </div>
+                    <p class="container__product-item-name">
+                        Bàn phím cơ E-DRA EK3104L
+                    </p>
+                    <p class="container__product-item-price">
+                        649.000  <sup><u>đ</u></sup>
+                    </p>
+                    <p class="container__product-item-price-old">
+                        790.000 <sup><u>đ</u></sup>
+                     </p>
+                    <div class="container__product-item-wrap-icon-btn">
+                        <form class="container__product-item-wrap-btn" action="">
+                            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                        </form>
+                    </div>
+    
+                    
+            </a>
+        </div></td>
+        <td> <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/bp22.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                Bàn phím cơ Fuhlen H108S Panda
+            </p>
+            <p class="container__product-item-price">
+                2.390.000 <sup><u>đ</u></sup>
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                </form>
+            </div>
+    
+            
+    </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/bp23.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Bàn phím cơ AKKO 3098S Dracula Castle
+        </p>
+        <p class="container__product-item-price">
+            1.989.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/bp24.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Bàn phím HyperWork HyperONE KB1 Plus
+        </p>
+        <p class="container__product-item-price">
+            690.000 <sup><u>đ</u></sup>
+            <p class="container__product-item-price-old">
+                890.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+            <td>
+                <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="SP/bp25.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Bàn phím cơ AKKO MOD007 PC Blue on White
+                </p>
+                <p class="container__product-item-price">
+                    2.590.000  <sup><u>đ</u></sup>
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                    </form>
+                </div>
+    
+                
+        </a></div></td>
+            </tr>
+            <tr>
+                <td> <div class="container__product-item">
+                    <a href="" class="container__product-item-link">
+                    <div class="container__product-item-wrap-img">
+                        <img src="SP/bp26.jpg" alt="" class="container__product-item-img">
+                    </div>
+                    <p class="container__product-item-name">
+                        Bàn phím cơ Fuhlen H75S SAOLA RGB 3
+                    </p>
+                    <p class="container__product-item-price">
+                        2.590.000 <sup><u>đ</u></sup>
+                    </p>
+                    <div class="container__product-item-wrap-icon-btn">
+                        <form class="container__product-item-wrap-btn" action="">
+                            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                        </form>
+                    </div>
+    
+                    
+            </a>
+        </div></td>
+        <td> <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/bp27.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                Bàn phím quang cơ DAREU EK810X BLACK-GREY
+            </p>
+            <p class="container__product-item-price">
+                749.000 <sup><u>đ</u></sup>
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                </form>
+            </div>
+    
+            
+    </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/bp28.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Bàn phím cơ Fuhlen H75S Panda RGB 3
+        </p>
+        <p class="container__product-item-price">
+            2.290.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/bp29.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Bàn phím cơ Corsair K100 Air Wireless RGB Ultra-Thin
+        </p>
+        <p class="container__product-item-price">
+            7.070.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+            <td>
+                <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="SP/bp30.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Bàn phím cơ Fuhlen T87S Pro RGB 
+                </p>
+                <p class="container__product-item-price">
+                    1.490.000 <sup><u>đ</u></sup>
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm"  id="msgbtn"  >
+                    </form>
+                </div>
+    
+                
+        </a></div></td>
+            </tr>
+        </table>
+</div>
+<script>
+    var input = document.getElementById('msgbtn');
+    input.onclick = function(){
+        alert('Đã thêm vào giỏ hàng');
+    };
+</script>
+   
+</body>
+<div class="footer">
+    <div class="grid wide">
+        <div class="row footer__list">
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                        GIỚI THIỆU
+                    </p>
+                    <p class="footer__introduce-item-text">
+                    Chào mừng bạn đến với cửa hàng DQTT shop linh kiện điện tử ! Tại đây, mỗi một dòng chữ, 
+                        mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử đạt đến 100 năm tới , 
+                        và sẽ không ngừng phát triển lớn mạnh.
+                    </p>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       ĐỊA CHỈ
+                    </p>
+                   <div class="footer__introduce-list">
+                       <div class="footer__introduce-item">
+                            <i class="footer__introduce-item-icon fa-solid fa-location-dot"></i>
+                            <p class="footer__introduce-item-text">
+                            KTX2, Trường cao đẳng cần thơ, Phường Hưng Lợi, Quận Ninh Kiều, Thành Phố Cần Thơ
+                            </p>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="tel:0123456789" class="footer__introduce-item-link">
+                               <i class="footer__introduce-item-icon fa-solid fa-mobile-screen-button"></i>
+                               <p class="footer__introduce-item-text">
+                                  0332512854
+                               </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="mailto:tquocduy0304@gmail.com" class="footer__introduce-item-link">
+                                <i class="footer__introduce-item-icon fa-solid fa-at"></i>
+                                <p class="footer__introduce-item-text">
+                                   tquocduy0304@gmail.com
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="https://www.tiktok.com/@quocduy990?lang=vi-VN" class="footer__introduce-item-link">
+                                <i class="footer__introduce-item-icon fa-brands fa-tiktok"></i>
+                                <p class="footer__introduce-item-text">
+                                   @quocduy990
+                                </p>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       MENU
+                    </p>
+                   <div class="footer__introduce-list">
+                       <div class="footer__introduce-item">
+                           <a href="index.php" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Trang Chủ
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Liên hệ
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Tin Tức
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Giới Thiệu
+                                </p>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       MẠNG XÃ HỘI
+                    </p>
+                   <div class="footer__introduce-list footer__introduce-list--display ">
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.facebook.com/duy.tranquoc.509" class="footer__introduce-item-link footer__introduce-item-link--display ">
+                                <i class="footer__introduce-item-icon fa-brands fa-facebook-f"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.instagram.com/" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-instagram"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://twitter.com/?lang=vi" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-twitter"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.pinterest.com/" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-pinterest-p"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="#" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-solid fa-rss"></i>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer__info">
+            <div class="col l-4">
+                <div class="footer__end">
+                    <p class="footer__end-text">
+                        ĐĂNG KÝ NHẬN THÔNG TIN
+                    </p>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="footer__end-wrap">
+                   <input type="email" class="footer__end-email" placeholder="Email...">
+                   <input type="button" class="footer__end-btn" value="Đăng Ký" name="check" onclick="checkEmail()">
+                <script type="text/javascript">
+                    function checkEmail() {
+                        var gt = document.getElementById('email');
+                        
+                        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                        if (!filter.test(gt.value)) {
+                            alert('Hãy nhập địa chỉ hợp lệ !');
+                            gt.focus;
+                            return false;
+                        }
+                        else
+                        {
+                            alert("Đăng ký thành công ");
+                        }
+                    }
+                </script>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="footer__end-imgs">
+                   <img src="hinhanh/footer1.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer2.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer3.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer4.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer5.png" alt="" class="footer__end-img">
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</html>

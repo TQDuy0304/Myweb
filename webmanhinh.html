@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màn Hình</title>
+    <link rel="stylesheet" href="./csst/Style.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <script src="./JavaScript/style.js"></script>
+    <script src="./JavaScript/script.js"></script>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="grid wide">
+            <div class="header__wrap">
+                <div class="header__login">
+                            <div class="header__login-register">
+                                <div class="header__login-register-wrap">
+                                    <i class="fa-solid fa-circle-user header__login-register--margin"></i>
+                                
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+
+                            </div>
+                        <div class="header__login-register" >
+                            <a href="DangKy_DangNhap.html" class="TEXT">ĐĂNG KÝ/ĐĂNG NHẬP</a> </div>
+                    
+                    
+                    </div>
+                    <div class="header__logo">
+                                <img src="/BaoCaoJAVASCRIPt/hinhanh/bia.jpg" alt="" class="header__logo-link-logo">
+                            </a>
+                    </div>
+                           
+                
+                <div class="header__wrap-search-cart">
+                    <form class="header__wrap-search" action="">
+                        <input type="search" class="header__wrap-search-input" placeholder="Tìm kiếm..." name="timkiem">
+                        <div class="header__wrap-search-cart-wrap">
+                            <input type="submit" class="header__wrap-search-btn" value="" name="submit">
+                            <i class="header__wrap-search-btn-icon fa-solid fa-magnifying-glass"></i>
+                
+                        </div>
+                    </form>   
+                    <div class="header__search-cart">
+                        <a href="" class="header__search-cart-link">
+                            <i class="header__search-cart-icon fa-solid fa-cart-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="index.html" class="menu__item-link">TRANG CHỦ</a>
+            </li>
+            <li class="menu__item">
+                <a href="webchuot.html" class="menu__item-link">CHUỘT</a>
+            </li>
+            <li class="menu__item">
+                <a href="lkmt.html" class="menu__item-link"> LINH KIỆN MÁY TÍNH</a>
+            </li>
+            <li class="menu__item">
+                <a href="webmanhinh.html" class="menu__item-link">MÀN HÌNH MÁY TÍNH</a>
+            </li>
+            <li class="menu__item">
+                <a href="webbanphim.html" class="menu__item-link">BÀN PHÍM</a>
+            </li>
+            <li class="menu__item">
+                <a href="TaiNgheLoaMicro.html" class="menu__item-link">TAI NGHE, LOA, MICRO</a>
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <hr width="100%" size="2" color="black">
+    <br>
+    <div id="MyClockDisplay" class="clock" onload="showTime()" align="left"></div>
+<script>
+ function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+  }
+  
+  showTime();
+  </script>    
+    <br><div align="center"><a href="#"><img src="SP/h2.jpg"  height="70%" width="70%" ></a></div> 
+    <hr width="100%" size="5" color="black">
+    <br>
+    <h1><p id=cc1>SẢN PHẨM NỔI BẬT</p></h1>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#cc1").click(function(){
+            $("#cc1").hide();
+            }
+        );
+    });
+    </script>
+    <table cellpadding="10" cellspacing="10" width="100%">
+        <tr>
+            <td> <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="SP/m1.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Màn hình Asus ProArt PA279CV 27inch 4K IPS 60Hz 5ms
+
+                </p>
+                <p class="container__product-item-price">
+                    12.490.000  <sup><u>đ</u></sup>
+                <p class="container__product-item-price-old">
+                    13.990.000  <sup><u>đ</u></sup>
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+                    </form>
+                </div>
+
+                
+        </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/m2.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Màn hình Samsung Odyssey G6 LS27BG652EEXXV 27 inch QHD VA 240Hz 1ms
+        </p>
+        <p class="container__product-item-price">
+            12.490.000 <sup><u>đ</u></sup>
+        <p class="container__product-item-price-old">
+            13.990.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+            </form>
+        </div>
+
+        
+</a>
+</div></td>
+<td> <div class="container__product-item">
+    <a href="" class="container__product-item-link">
+    <div class="container__product-item-wrap-img">
+        <img src="SP/m3.jpg" alt="" class="container__product-item-img">
+    </div>
+    <p class="container__product-item-name">
+        Màn hình AOC Q27G2S/74 (27 inch HDR | IPS QHD | G-Sync | 155Hz | 1ms)
+    </p>
+    <p class="container__product-item-price">
+        6.790.000  <sup><u>đ</u></sup>
+
+    </p>
+    <div class="container__product-item-wrap-icon-btn">
+        <form class="container__product-item-wrap-btn" action="">
+            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+        </form>
+    </div>
+
+    
+</a>
+</div></td> 
+<td> <div class="container__product-item">
+    <a href="" class="container__product-item-link">
+    <div class="container__product-item-wrap-img">
+        <img src="SP/m4.jpg" alt="" class="container__product-item-img">
+    </div>
+    <p class="container__product-item-name">
+        Màn hình Viewsonic VX2728J 27 inch FHD IPS 165Hz 0.5ms
+    </p>
+    <p class="container__product-item-price">
+        5.090.000  <sup><u>đ</u></sup>
+        <p class="container__product-item-price-old">
+            5.590.000   <sup><u>đ</u></sup>
+    </p>
+    <div class="container__product-item-wrap-icon-btn">
+        <form class="container__product-item-wrap-btn" action="">
+            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+        </form>
+    </div>
+
+    
+</a>
+</div></td> 
+        <td>
+            <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/m5.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                Màn hình AOC 27B3HM/74 (27 inch | VA FHD | 75Hz | 4ms)
+            </p>
+            <p class="container__product-item-price">
+                2.990.000   <sup><u>đ</u></sup>
+          
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+                </form>
+            </div>
+
+            
+    </a></div></td>
+        </tr>
+        <tr>
+            <td> <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="SP/m6.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Màn hình MSI Optix G274 27 inch FHD IPS 170Hz 1ms
+                </p>
+                <p class="container__product-item-price">
+                    4.950.000  <sup><u>đ</u></sup>
+                <p class="container__product-item-price-old">
+                    5.390.000  <sup><u>đ</u></sup>
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+                    </form>
+                </div>
+
+                
+        </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/m7.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Màn Hình HKC ANT-22F220 21.45 inch FHD VA 75hz 7ms
+        </p>
+        <p class="container__product-item-price">
+            1.690.000 <sup><u>đ</u></sup>
+        <p class="container__product-item-price-old">
+            1.790.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+            </form>
+        </div>
+
+        
+</a>
+</div></td>
+<td> <div class="container__product-item">
+    <a href="" class="container__product-item-link">
+    <div class="container__product-item-wrap-img">
+        <img src="SP/m8.jpg" alt="" class="container__product-item-img">
+    </div>
+    <p class="container__product-item-name">
+        Bàn Phím cơ ASUS ROG Azoth
+    </p>
+    <p class="container__product-item-price">
+        2.890.000 <sup><u>đ</u></sup>
+    <p class="container__product-item-price-old">
+        2.990.000 <sup><u>đ</u></sup>
+    </p>
+    <div class="container__product-item-wrap-icon-btn">
+        <form class="container__product-item-wrap-btn" action="">
+            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+        </form>
+    </div>
+
+    
+</a>
+</div></td> 
+<td> <div class="container__product-item">
+    <a href="" class="container__product-item-link">
+    <div class="container__product-item-wrap-img">
+        <img src="SP/m9.jpg" alt="" class="container__product-item-img">
+    </div>
+    <p class="container__product-item-name">
+        Màn Hình Cong Gaming HKC ANT-24G242 23.8 inch FHD VA 100hz 7ms
+    </p>
+    <p class="container__product-item-price">
+        2.590.000  <sup><u>đ</u></sup>
+    <p class="container__product-item-price-old">
+        2.990.000 <sup><u>đ</u></sup>
+    </p>
+    <div class="container__product-item-wrap-icon-btn">
+        <form class="container__product-item-wrap-btn" action="">
+            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+        </form>
+    </div>
+
+    
+</a>
+</div></td> 
+        <td>
+            <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/m10.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                
+                Màn hình E-DRA EGM27F75 27 inch FHD 75Hz 1ms
+            </p>
+            <p class="container__product-item-price">
+                2.450.000  <sup><u>đ</u></sup>
+                <p class="container__product-item-price-old ">
+                    2.790.000   <sup><u>đ</u></sup>
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+                </form>
+            </div>
+
+            
+    </a></div></td>
+        </tr>
+    </table>
+    
+</div>
+<br>
+
+    <div class="body2">
+        <table cellpadding="10" cellspacing="10" width="100%">
+            <tr>
+                <td> <div class="container__product-item">
+                    <a href="" class="container__product-item-link">
+                    <div class="container__product-item-wrap-img">
+                        <img src="SP/m11.jpg" alt="" class="container__product-item-img">
+                    </div>
+                    <p class="container__product-item-name">
+                        Màn hình ASUS VY279HE-W 27 inch FHD IPS 75Hz 1ms
+                    </p>
+                    <p class="container__product-item-price">
+                        3.990.000  <sup><u>đ</u></sup>
+                        <p class="container__product-item-price-old">
+                            4.990.000  <sup><u>đ</u></sup>
+    
+                    </p>
+                    <div class="container__product-item-wrap-icon-btn">
+                        <form class="container__product-item-wrap-btn" action="">
+                            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+                        </form>
+                    </div>
+    
+                    
+            </a>
+        </div></td>
+        <td> <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/m12.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                Màn hình Acer K273 E 27 inch FHD IPS 100Hz 1ms
+            </p>
+            <p class="container__product-item-price">
+                3.790.000  <sup><u>đ</u></sup>
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+                </form>
+            </div>
+    
+            
+    </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/m13.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Màn hình Acer EK221Q H 21.5 inch FHD VA 100Hz 1ms
+        </p>
+        <p class="container__product-item-price">
+            2.990.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/m14.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Màn hình Asus ProArt PA279CRV 27inch 4K IPS 60Hz 5ms
+ 
+        </p>
+        <p class="container__product-item-price">
+            16.990.000 <sup><u>đ</u></sup>
+            <p class="container__product-item-price-old">
+                17.990.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+            <td>
+                <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="SP/m15.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Màn hình Gigabyte G24F 2 24inch FHD IPS 180Hz 1ms
+
+                </p>
+                <p class="container__product-item-price">
+                    3.890.000 <sup><u>đ</u></sup>
+                <p class="container__product-item-price-old">
+                    5.990.000  <sup><u>đ</u></sup>
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+                    </form>
+                </div>
+    
+                
+        </a></div></td>
+            </tr>
+            <tr>
+                <td> <div class="container__product-item">
+                    <a href="" class="container__product-item-link">
+                    <div class="container__product-item-wrap-img">
+                        <img src="SP/m16.jpg" alt="" class="container__product-item-img">
+                    </div>
+                    <p class="container__product-item-name">
+                        Màn hình MSI Pro MP223 21.45 inch VA 100Hz 1ms
+                    </p>
+                    <p class="container__product-item-price">
+                        1.899.000 <sup><u>đ</u></sup>
+                    <p class="container__product-item-price-old">
+                        2.090.000  <sup><u>đ</u></sup>
+                    </p>
+                    <div class="container__product-item-wrap-icon-btn">
+                        <form class="container__product-item-wrap-btn" action="">
+                            <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+                        </form>
+                    </div>
+    
+                    
+            </a>
+        </div></td>
+        <td> <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/m17.jpg" alt="" class="container__product-item-img">
+            </div>
+            <p class="container__product-item-name">
+                Màn hình Gigabyte M34WQ-EK 34inch WQHD IPS 144Hz 1ms
+            </p>
+            <p class="container__product-item-price">
+                11.390.000   <sup><u>đ</u></sup>
+                <p class="container__product-item-price-old">
+                    13.990.000   <sup><u>đ</u></sup>
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+                </form>
+            </div>
+    
+            
+    </a>
+    </div></td>
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/m18.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Màn hình Acer VG240Y S 24inch IPS FHD 165Hz 2ms
+        </p>
+        <p class="container__product-item-price">
+            3.890.000  <sup><u>đ</u></sup>
+        <p class="container__product-item-price-old">
+            5.590.000  <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+    <td> <div class="container__product-item">
+        <a href="" class="container__product-item-link">
+        <div class="container__product-item-wrap-img">
+            <img src="SP/m19.jpg" alt="" class="container__product-item-img">
+        </div>
+        <p class="container__product-item-name">
+            Màn hình MSI Optix G27C4 27inch FHD VA 165Hz 1ms
+        </p>
+        <p class="container__product-item-price">
+            4.790.000   <sup><u>đ</u></sup>
+            <p class="container__product-item-price-old">
+                6.490.000    <sup><u>đ</u></sup>
+        </p>
+        <div class="container__product-item-wrap-icon-btn">
+            <form class="container__product-item-wrap-btn" action="">
+                <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+            </form>
+        </div>
+    
+        
+    </a>
+    </div></td> 
+            <td>
+                <div class="container__product-item">
+                <a href="" class="container__product-item-link">
+                <div class="container__product-item-wrap-img">
+                    <img src="SP/m20.jpg" alt="" class="container__product-item-img">
+                </div>
+                <p class="container__product-item-name">
+                    Màn hình AOC 24G2Z/74 23.8inch FHD IPS 240Hz 0.5ms
+                </p>
+                <p class="container__product-item-price">
+                    5.899.000  <sup><u>đ</u></sup>
+                    
+                </p>
+                <div class="container__product-item-wrap-icon-btn">
+                    <form class="container__product-item-wrap-btn" action="">
+                        <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm" id="msgbtn" >
+                    </form>
+                </div>
+    
+                
+        </a></div></td>
+            </tr>
+        </table>
+</div>
+<br>
+
+
+
+    
+</a></div></td>
+<div id="saleof">
+    <div class="box-left">
+        <h1>
+            <span>TOP MONITOR GAMING 2023</span>
+            <span align="left">
+                <div>
+                    Màn hình ASUS ROG Swift OLED PG27AQDM (27 inch | 2K OLED 2560×1440 | FreeSync | HDR10 | sRGB 135% | 0,03ms 240Hz)</div></h1>
+                    <hr>
+                    <input type="button" value="Ẩn bớt" id="b1">
+                    <input type="button" value="Hiện" id="b2">                
+    <div id="d3" align="left">
+    Kích thước màn hình: 27-inch (26.5-inch xem được)<br>
+    Độ phân giải: 2560 x 1440 (1440p)<br>
+    Tần số làm mới: 240 Hz<br>
+    Thời gian phản hồi: 0,03ms<br>
+    Công nghệ màn hình: OLED<br>
+    Tương thích G-SYNC®: Có<br>
+    Chống chói: Có<br>
+    Tản nhiệt tùy chỉnh: Có<br>
+    Tối ưu hóa điện áp thông minh: Có<br>
+    Độ sáng tối đa: 1000 nit (3% của màn hình với HDR)<br>
+    Gam màu DCI-P3: 99%<br>
+    Thiết lập độ sáng đồng đều tùy chọn: Có<br>
+    Trung tâm DisplayWidget: Có<br>
+    </div>
+
+     
+
+    </span>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#d3").hide();
+                }
+            );
+        });
+        $(document).ready(function(){
+            $("#b2").click(function(){
+                $("#d3").show();
+                }
+            );
+        });
+    
+    
+    var input = document.getElementById('msgbtn');
+    input.onclick = function(){
+        alert('Đã thêm vào giỏ hàng');
+    };
+
+
+        </script>
+
+
+
+    <div class="box-right">
+
+        <td>
+            <div class="container__product-item">
+            <a href="" class="container__product-item-link">
+            <div class="container__product-item-wrap-img">
+                <img src="SP/m21.jpg" hight="100%" width="80% "alt="" class="container__product-item-imgsc">
+            </div>
+            </p>
+            <p class="container__product-item-price">
+                29.990.000  <sup><u>đ</u></sup>
+                <p class="container__product-item-price-old">
+                    31.990.000   <sup><u>đ</u></sup>   
+            </p>
+            <div class="container__product-item-wrap-icon-btn">
+                <form class="container__product-item-wrap-btn" action="">
+                    <input type="submit" class="container__product-item-btn" value="Mua sản Phẩm">
+                </form>
+
+
+
+    </div></a></div></td></div>
+
+</div>
+
+
+
+</body>
+<div class="footer">
+    <div class="grid wide">
+        <div class="row footer__list">
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                        GIỚI THIỆU
+                    </p>
+                    <p class="footer__introduce-item-text">
+                    Chào mừng bạn đến với cửa hàng DQTT shop linh kiện điện tử ! Tại đây, mỗi một dòng chữ, 
+                        mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử đạt đến 100 năm tới , 
+                        và sẽ không ngừng phát triển lớn mạnh.
+                    </p>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       ĐỊA CHỈ
+                    </p>
+                   <div class="footer__introduce-list">
+                       <div class="footer__introduce-item">
+                            <i class="footer__introduce-item-icon fa-solid fa-location-dot"></i>
+                            <p class="footer__introduce-item-text">
+                            KTX2, Trường cao đẳng cần thơ, Phường Hưng Lợi, Quận Ninh Kiều, Thành Phố Cần Thơ
+                            </p>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="tel:0123456789" class="footer__introduce-item-link">
+                               <i class="footer__introduce-item-icon fa-solid fa-mobile-screen-button"></i>
+                               <p class="footer__introduce-item-text">
+                                  0332512854
+                               </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="mailto:tquocduy0304@gmail.com" class="footer__introduce-item-link">
+                                <i class="footer__introduce-item-icon fa-solid fa-at"></i>
+                                <p class="footer__introduce-item-text">
+                                   tquocduy0304@gmail.com
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="https://www.tiktok.com/@quocduy990?lang=vi-VN" class="footer__introduce-item-link">
+                                <i class="footer__introduce-item-icon fa-brands fa-tiktok"></i>
+                                <p class="footer__introduce-item-text">
+                                   @quocduy990
+                                </p>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       MENU
+                    </p>
+                   <div class="footer__introduce-list">
+                       <div class="footer__introduce-item">
+                           <a href="index.php" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Trang Chủ
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Liên hệ
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Tin Tức
+                                </p>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item">
+                           <a href="#" class="footer__introduce-item-link">
+                                <p class="footer__introduce-item-text">
+                                    Giới Thiệu
+                                </p>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="footer__introduce">
+                    <p class="footer__introduce-title">
+                       MẠNG XÃ HỘI
+                    </p>
+                   <div class="footer__introduce-list footer__introduce-list--display ">
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.facebook.com/duy.tranquoc.509" class="footer__introduce-item-link footer__introduce-item-link--display ">
+                                <i class="footer__introduce-item-icon fa-brands fa-facebook-f"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.instagram.com/" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-instagram"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://twitter.com/?lang=vi" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-twitter"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="https://www.pinterest.com/" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-brands fa-pinterest-p"></i>
+                           </a>
+                       </div>
+                       <div class="footer__introduce-item footer__introduce-item--bg">
+                           <a href="#" class="footer__introduce-item-link footer__introduce-item-link--display">
+                                <i class="footer__introduce-item-icon fa-solid fa-rss"></i>
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer__info">
+            <div class="col l-4">
+                <div class="footer__end">
+                    <p class="footer__end-text">
+                        ĐĂNG KÝ NHẬN THÔNG TIN
+                    </p>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="footer__end-wrap">
+                   <input type="email" class="footer__end-email" placeholder="Email...">
+                   <input type="button" class="footer__end-btn" value="Đăng Ký" name="check" onclick="checkEmail();">
+                   <script type="text/javascript">
+                       function checkEmail() {
+                           var gt = document.getElementById('email');
+                           
+                           var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                           if (!filter.test(gt.value)) {
+                               alert('Hãy nhập địa chỉ hợp lệ !');
+                               gt.focus;
+                               return false;
+                           }
+                           else
+                           {
+                               alert("Đăng ký thành công " );
+                           }
+                       }
+                   </script>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="footer__end-imgs">
+                   <img src="hinhanh/footer1.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer2.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer3.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer4.png" alt="" class="footer__end-img">
+                   <img src="hinhanh/footer5.png" alt="" class="footer__end-img">
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</html>
